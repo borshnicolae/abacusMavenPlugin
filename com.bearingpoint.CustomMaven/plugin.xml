@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="%perspective.name"
+            fixed="true"
+            class="com.bearingpoint.CustomMaven.PerspectiveFactory1"
+            id="CustomMaven.perspective1">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="CustomMaven.perspective1">
+         <view
+               id="com.bearingpoint.CustomMaven.view1"
+               minimized="false"
+               ratio="0.95f"
+               relationship="top"
+               relative="org.eclipse.ui.editorss">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.bearingpoint.CustomMaven.MyView"
+            id="com.bearingpoint.CustomMaven.view1"
+            name="%view.name"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
