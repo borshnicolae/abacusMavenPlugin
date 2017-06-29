@@ -10,6 +10,7 @@ public class MyView extends ViewPart {
     @Override
     public void createPartControl(Composite parent) {
     	new Comp(parent, SWT.NONE);
+    	System.out.println("Hello");
     }
 
     @Override
